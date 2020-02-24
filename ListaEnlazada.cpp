@@ -53,6 +53,12 @@ void ListaSimple::InsertarNodoEnListaVacia(string info)
 
 void ListaSimple::InsertarNodoInicioLista(string info)
 {
+      elemento *NodoNuevo;
+    NodoNuevo = new elemento;
+    NodoNuevo->nombre=info;
+    NodoNuevo->SiguienteElemento=MiLista->Primero;
+    MiLista->Primero=NodoNuevo;
+    MiLista->tamano++;
     
 }
 
